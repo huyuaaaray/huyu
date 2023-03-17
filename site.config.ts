@@ -66,7 +66,7 @@ export default siteConfig({
       pageId: '4b35f0ca0ae141b08e80ec515f7c430c'
     }
   ]
-})
+// })
 // import { siteConfig } from './lib/site-config'
 
 // export default siteConfig({
