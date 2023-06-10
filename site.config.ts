@@ -69,13 +69,3 @@ export default siteConfig({
 }
 )
 
-const styles = `
-  /* 设置背景颜色 */
-  body {
-    background-color: #FFE4B5;
-  }
-`;
-
-const styleTag = document.createElement('style');
-styleTag.innerHTML = styles;
-document.head.appendChild(styleTag);
