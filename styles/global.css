@@ -19,7 +19,7 @@ body {
     'Droid Sans', 'Helvetica Neue', 'Noto Sans', sans-serif;
   font-family: var(--notion-font);
   overflow-x: hidden;
-  background-color:#87CEFA;
+  background-color:#FF4500;
 }
 
 .static-tweet blockquote {
