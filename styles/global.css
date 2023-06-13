@@ -16,7 +16,7 @@ html {
 body {
   --notion-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', 'Noto Sans', sans-serif;
+    'Droid Sans', 'Helvetica Neue', 'Noto Sans', serif;
   font-family: var(--notion-font);
   overflow-x: hidden;
   background-color:#FF4500;
