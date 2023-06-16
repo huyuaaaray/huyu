@@ -12,6 +12,11 @@
   border-color: rgba(17, 24, 39, 1);
   border-bottom-color: rgba(17, 24, 39, 1);
 }
+.dark-mode .footer {
+  background-color: rgba(17, 24, 39, 1);
+}
+
+
 .notion code {
   color: rgba(31, 41, 55, 1);
   border: 0 none !important;
