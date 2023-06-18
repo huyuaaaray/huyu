@@ -21,7 +21,7 @@
   color: rgba(31, 41, 55, 1);
   border: 0 none !important;
   box-shadow: none !important;
-  background: #ffc0cb !important;
+  background: none !important;
   padding: 0 !important;
 }
 .dark-mode .notion code {
