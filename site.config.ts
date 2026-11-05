@@ -20,7 +20,7 @@ export default siteConfig({
      twitter: null,
      github: 'huyuaaaray',
      linkedin: 'yu-hu-769b02261',
-     googleScholar: 'https://scholar.google.com/citations?user=SL4Guq4AAAAJ&hl=en',
+     googleScholar: 'SL4Guq4AAAAJ',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
