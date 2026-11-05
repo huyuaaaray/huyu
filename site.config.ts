@@ -59,7 +59,7 @@ export default siteConfig({
   //     pageId: '957188d4275f40678f3a55210827384e'
   //   },
     {
-      title: 'RESUME',
+      title: 'CV',
       pageId: 'c7ec8a97edc64685a6c84335c22c5a77'
     },
   //   {

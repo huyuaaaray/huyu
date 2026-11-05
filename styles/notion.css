@@ -421,3 +421,18 @@
   border-radius: 4px;
   background: url('/header-icon.png') center / cover;
 } */
+/* 手机上首页分栏改为横向排列，放不下时自动换行并居中 */
+@media (max-width: 640px) {
+  .index-page .notion-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 16px;
+  }
+
+  .index-page .notion-row .notion-column {
+    width: auto !important;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
