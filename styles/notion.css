@@ -407,3 +407,16 @@
   max-width: 100%;
   height: auto !important;
 }
+/* 只替换 header 左上角的小图标，不影响首页头像 */
+.notion-nav-header > .breadcrumbs:not(.notion-nav-header-rhs) .breadcrumb .icon {
+  display: none;
+}
+
+.notion-nav-header > .breadcrumbs:not(.notion-nav-header-rhs) .breadcrumb::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  border-radius: 4px;
+  background: url('/header-icon.png') center / cover;
+}
