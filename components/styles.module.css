@@ -237,9 +237,9 @@
   padding: 8px;
 }
 
-/* 手机上 header 放不下，隐藏这几个图标（页脚里还有） */
+/* 手机上 header 放不下，隐藏这几个图标（页脚里还有）
 @media (max-width: 640px) {
   :global(.notion-header) :global(.notion-nav-header-rhs) .headerSocial {
     display: none;
   }
-}
+} */
