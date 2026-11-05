@@ -413,11 +413,11 @@
   display: none !important;
 }
 
-.notion-nav-header > .breadcrumbs:not(.notion-nav-header-rhs) .breadcrumb::before {
+/* .notion-nav-header > .breadcrumbs:not(.notion-nav-header-rhs) .breadcrumb::before {
   content: '';
   width: 22px;
   height: 22px;
   margin-right: 6px;
   border-radius: 4px;
   background: url('/header-icon.png') center / cover;
-}
+} */
