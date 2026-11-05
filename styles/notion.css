@@ -408,8 +408,9 @@
   height: auto !important;
 }
 /* 只替换 header 左上角的小图标，不影响首页头像 */
-.notion-nav-header > .breadcrumbs:not(.notion-nav-header-rhs) .breadcrumb .icon {
-  display: none;
+/* 隐藏 header 左上角原来的页面图标（整个外层容器一起隐藏） */
+.notion-nav-header > .breadcrumbs:not(.notion-nav-header-rhs) .breadcrumb .notion-page-icon-inline {
+  display: none !important;
 }
 
 .notion-nav-header > .breadcrumbs:not(.notion-nav-header-rhs) .breadcrumb::before {
