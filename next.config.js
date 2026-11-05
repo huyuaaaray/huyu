@@ -5,6 +5,14 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   staticPageGenerationTimeout: 300,
+  async headers() {
+    return [
+      {
+        source: '/resume.pdf',
+        headers: [{ key: 'Access-Control-Allow-Origin', value: '*' }]
+      }
+    ]
+  },
   images: {
     domains: [
       'www.notion.so',

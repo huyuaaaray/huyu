@@ -54,18 +54,19 @@ export default siteConfig({
 //   navigationStyle: 'default'
   navigationStyle: 'custom',
   navigationLinks: [
-    {
-      title: 'ABOUT',
-      pageId: '957188d4275f40678f3a55210827384e'
-    },
+  //   {
+  //     title: 'ABOUT',
+  //     pageId: '957188d4275f40678f3a55210827384e'
+  //   },
     {
       title: 'RESUME',
       pageId: 'c7ec8a97edc64685a6c84335c22c5a77'
     },
-    {
-      title: 'CONTACT',
-      pageId: '4b35f0ca0ae141b08e80ec515f7c430c'
-    }
+  //   {
+  //     title: 'CONTACT',
+  //     pageId: '4b35f0ca0ae141b08e80ec515f7c430c'
+  //   }
+  // 
   ]
 }
 )
