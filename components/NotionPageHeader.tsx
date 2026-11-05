@@ -1,12 +1,22 @@
 import * as React from 'react'
 
 import * as types from 'notion-types'
+import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
+import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
+import { SiGooglescholar } from '@react-icons/all-files/si/SiGooglescholar'
 import cs from 'classnames'
 import { Breadcrumbs, Header, Search, useNotionContext } from 'react-notion-x'
 
-import { isSearchEnabled, navigationLinks, navigationStyle } from '@/lib/config'
+import {
+  github,
+  googleScholar,
+  isSearchEnabled,
+  linkedin,
+  navigationLinks,
+  navigationStyle
+} from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
@@ -32,6 +42,54 @@ const ToggleThemeButton = () => {
     </div>
   )
 }
+
+const HeaderSocialLinks = () => (
+  <>
+    {github && (
+      <a
+        className={cs('breadcrumb', 'button', styles.headerSocial, styles.github)}
+        href={`https://github.com/${github}`}
+        title='GitHub'
+        aria-label='GitHub'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <FaGithub />
+      </a>
+    )}
+
+    {linkedin && (
+      <a
+        className={cs('breadcrumb', 'button', styles.headerSocial, styles.linkedin)}
+        href={`https://www.linkedin.com/in/${linkedin}`}
+        title='LinkedIn'
+        aria-label='LinkedIn'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <FaLinkedin />
+      </a>
+    )}
+
+    {googleScholar && (
+      <a
+        className={cs(
+          'breadcrumb',
+          'button',
+          styles.headerSocial,
+          styles.googleScholar
+        )}
+        href={`https://scholar.google.com/citations?user=${googleScholar}`}
+        title='Google Scholar'
+        aria-label='Google Scholar'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <SiGooglescholar />
+      </a>
+    )}
+  </>
+)
 
 export const NotionPageHeader: React.FC<{
   block: types.CollectionViewPageBlock | types.PageBlock
@@ -77,6 +135,8 @@ export const NotionPageHeader: React.FC<{
               }
             })
             .filter(Boolean)}
+
+          <HeaderSocialLinks />
 
           <ToggleThemeButton />
 

@@ -9,7 +9,7 @@ import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
-
+import { SiGooglescholar } from '@react-icons/all-files/si/SiGooglescholar'
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
@@ -122,7 +122,17 @@ export const FooterImpl: React.FC = () => {
             <FaEnvelopeOpenText />
           </a>
         )}
-
+        {config.googleScholar && (
+          <a
+            className={styles.googleScholar}
+            href={`https://scholar.google.com/citations?user=${config.googleScholar}`}
+            title={`Google Scholar ${config.author}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <SiGooglescholar />
+          </a>
+        )}
         {config.youtube && (
           <a
             className={styles.youtube}
